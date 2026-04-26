@@ -84,9 +84,9 @@ const MainContent = ({ activeSection }: MainContentProps) => {
         return (
           <div>
             {/* Profile Header */}
-            <div className="pt-8 px-8 pb-8">
-                <div className="flex items-center justify-between mb-6">
-                  <h1 className="text-2xl font-bold text-foreground">Full Stack Engineer | DevOps Engineer</h1>
+            <div className="pt-4 sm:pt-8 px-4 sm:px-8 pb-4 sm:pb-8">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 space-y-2 sm:space-y-0">
+                  <h1 className="text-lg sm:text-2xl font-bold text-foreground">Full Stack Engineer | DevOps Engineer</h1>
                 </div>
               
               
@@ -175,14 +175,14 @@ const MainContent = ({ activeSection }: MainContentProps) => {
             <div className="w-full h-px bg-border"></div>
             
             {/* Work History Section */}
-            <div className="p-8">
+            <div className="p-4 sm:p-8">
               <div className="mb-6">
-                <h2 className="text-2xl font-bold text-foreground">Work history</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-foreground">Work history</h2>
               </div>
               
               {/* Tabs */}
               <div className="mb-6">
-                <div className="flex space-x-8">
+                <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8">
                   <button 
                     className={`relative cursor-pointer transition-colors ${
                       activeTab === 'completed' 
@@ -350,8 +350,8 @@ const MainContent = ({ activeSection }: MainContentProps) => {
             <div className="w-full h-px bg-border"></div>
 
             {/* Skills Section */}
-            <div className="p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-6">Skills</h2>
+            <div className="p-4 sm:p-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-6">Skills</h2>
               <div className="flex flex-wrap gap-3">
                 {/* Full Stack Skills */}
                 <span className="bg-secondary text-foreground px-4 py-2 rounded-full text-sm">Ecommerce Website</span>

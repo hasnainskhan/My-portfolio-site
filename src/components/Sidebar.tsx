@@ -88,9 +88,9 @@ const Sidebar = ({ activeSection, onSectionChange }: SidebarProps) => {
   ];
 
   return (
-    <aside className="w-80 bg-background border-r border-border min-h-screen">
+    <aside className="w-full lg:w-80 bg-background border-r-0 lg:border-r border-border min-h-screen lg:min-h-0">
       {/* Navigation */}
-      <div className="p-6">
+      <div className="p-4 sm:p-6">
         <div className="space-y-1">
           <div className="text-foreground py-2">
             <span className="text-base font-medium">View profile</span>
@@ -147,7 +147,7 @@ const Sidebar = ({ activeSection, onSectionChange }: SidebarProps) => {
       <div className="w-full h-px bg-border"></div>
 
       {/* Jobs and Hours Summary */}
-      <div className="p-6">
+      <div className="p-4 sm:p-6">
         <div className="grid grid-cols-2 gap-8">
             <div className="text-center">
               <div className="text-2xl font-bold text-foreground">21</div>
@@ -164,7 +164,7 @@ const Sidebar = ({ activeSection, onSectionChange }: SidebarProps) => {
       <div className="w-full h-px bg-border"></div>
 
       {/* Promotional Section */}
-      <div className="space-y-3 p-6">
+      <div className="space-y-3 p-4 sm:p-6">
         <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-3">
           <div className="flex items-center justify-between">
             <span className="text-blue-300 text-sm font-medium">Available now</span>
@@ -176,8 +176,8 @@ const Sidebar = ({ activeSection, onSectionChange }: SidebarProps) => {
       {/* Border after promotional section */}
       <div className="w-full h-px bg-border"></div>
 
-            {/* Education Section */}
-            <div className="p-6">
+      {/* Education Section */}
+      <div className="p-4 sm:p-6">
               <h3 className="text-base font-medium text-foreground mb-3">Education</h3>
               <div className="space-y-2">
                 <div>
@@ -191,8 +191,8 @@ const Sidebar = ({ activeSection, onSectionChange }: SidebarProps) => {
             {/* Border after Education section */}
             <div className="w-full h-px bg-border"></div>
 
-            {/* Linked accounts Section */}
-            <div className="p-6">
+      {/* Linked accounts Section */}
+      <div className="p-4 sm:p-6">
               <h3 className="text-base font-medium text-foreground mb-3">Linked accounts</h3>
               <div className="space-y-3">
                 {/* GitHub Card */}
