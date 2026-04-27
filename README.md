@@ -1,3 +1,3 @@
 this is my portfolio site
 
-devel
+develo
