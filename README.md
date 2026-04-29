@@ -2,4 +2,4 @@ this is my portfolio site
 
 developed by Hasnain babar
 upwork 
-im full stac
+im full stack
